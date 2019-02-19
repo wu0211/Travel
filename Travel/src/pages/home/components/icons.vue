@@ -28,7 +28,7 @@
     },
     computed: {
       pages() {
-        const pages = []
+        const pages = [];
         this.list.forEach((item, index) => {
           const page = Math.floor(index / 8)
           if (!pages[page]) {
