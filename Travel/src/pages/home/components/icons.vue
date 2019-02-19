@@ -91,6 +91,7 @@
     float: left;
     padding-bottom: 25%;
     position: relative;
+    margin-top: .1rem;
   }
 
   .icon-img {
