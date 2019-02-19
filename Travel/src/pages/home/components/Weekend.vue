@@ -23,21 +23,21 @@
     data() {
       return {
         recommendList: [{
-          id: "0001",
-          imgUrl: "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-          title: "故宫",
+          id: '0001',
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
+          title: '故宫',
           desc: '世界五大宫之首，穿越与您近在咫尺',
           price: '20'
         }, {
-          id: "0002",
-          imgUrl: "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-          title: "故宫",
+          id: '0002',
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
+          title: '故宫',
           desc: '世界五大宫之首，穿越与您近在咫尺',
           price: '20'
         }, {
-          id: "0003",
-          imgUrl: "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-          title: "故宫",
+          id: '0003',
+          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
+          title: '故宫',
           desc: '世界五大宫之首，穿越与您近在咫尺',
           price: '20'
         }]
