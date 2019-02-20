@@ -9,7 +9,6 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
-
     </swiper>
   </div>
 </template>
@@ -47,9 +46,8 @@
 
 <style lang="stylus" scoped>
   @imoprt '~styles/varibles.styl'
-  @imoprt '~styles/mixins.styl'
 
-  .icons>>>.swiprt-content {
+  .icons >>>.swiprt-content {
     height: 0;
     padding-bottom: 50%;
   }
