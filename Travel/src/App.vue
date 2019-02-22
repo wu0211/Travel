@@ -13,9 +13,9 @@ export default {
   name: 'App',
   created() {
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-      alert('手机端')
+    //  alert('手机端')
    }else{
-      alert('PC端')
+      //alert('PC端')
    }
   },
 }
