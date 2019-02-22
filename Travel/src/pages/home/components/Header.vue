@@ -31,7 +31,7 @@
     line-height: 43px;
     display: flex;
     color: #fff;
-    background: $bgColor;
+    background: #00bcd4;
   }
 
   .header-left {
