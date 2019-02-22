@@ -40,7 +40,7 @@ export default {
     getHomeInfo(){
       axios.get('/api/index.json')
       .then((result) => {
-      
+        console.log(result)
       const data =result.data.data;
       console.log(data)
       this.city=data.city;
