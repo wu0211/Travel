@@ -15,7 +15,6 @@
           <div class="button-wrapper" v-for="item of hot" :key="item.id" @click="handleCityClick(item.name)">
             <div class="button">{{item.name}}</div>
           </div>
-
         </div>
       </div>
       <div class="area" 

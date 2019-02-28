@@ -1,6 +1,6 @@
 <template>
   <div>
-    <detail-banner></detail-banner>
+    <detail-banner :sightName="sightName" :bannerImg="bannerImg" :bannerImgs="gallaryImgs"></detail-banner>
     <detail-header></detail-header>
     <div class="content">
       <detail-list :list="list"></detail-list>
@@ -21,15 +21,10 @@
     },
     data() {
       return {
-        list: [{
-          title: '成人票'
-        }, {
-          title: '学生票'
-        }, {
-          title: '儿童票'
-        }, {
-          title: '特惠票'
-        }]
+        sightName: '',
+        bannerImg: '',
+        gallaryImgs: [],
+        list: []
       }
     },
     activated() {
@@ -40,19 +35,29 @@
     },
     methods: {
       getDetailInfo() {
-       // axios.get('/api/detail.json?id=' + this.$route.params.id).then((result) => {
+        // axios.get('/api/detail.json?id=' + this.$route.params.id).then((result) => {
 
         //}).catch((err) => {
 
         //});
-        axios.get('/api/detail.json',{
-          params:{
-            id:this.$route.params.id
+        axios.get('/api/detail.json', {
+          params: {
+            id: this.$route.params.id
           }
         }).then((result) => {
-            console.log(result)
+          result = result.data;
+          if (result.ret && result.data) {
+            const data = result.data;
+            console.log(data)
+            this.sightName = data.sightName;
+            this.bannerImg = data.bannerImg;
+            this.gallaryImgs = data.gallaryImgs;
+            this.list = data.categoryList;
+
+
+          }
         }).catch((err) => {
-          
+
         });
       }
     },

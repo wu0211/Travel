@@ -6,6 +6,7 @@ import router from './router'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store/index'
+import ElementUI from 'element-ui'
 
 import 'styles/reset.css'
 import 'styles/border.css'
@@ -16,12 +17,17 @@ Vue.config.productionTip = false
 fastClick.attach(document.body)
 
 Vue.use(VueAwesomeSwiper)
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
+
+// 路由：根据网址的不同，返回不同的页面给用户
