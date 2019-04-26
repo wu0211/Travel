@@ -3,6 +3,7 @@
 >去哪儿网项目实战
 
 > A Vue.js project
+>去哪网部分界面
 
 ## Build Setup
 
