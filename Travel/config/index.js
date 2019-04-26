@@ -57,8 +57,14 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-
+    assetsPublicPath: './',
+    proxyTable: {
+      '/api':{
+        pathRewrite:{
+          '^/api':'/static/mock'
+        }
+      }
+    },
     /**
      * Source Maps
      */
