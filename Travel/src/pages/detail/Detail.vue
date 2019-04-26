@@ -40,7 +40,7 @@
         //}).catch((err) => {
 
         //});
-        axios.get('/static/mock/detail.json', {
+        axios.get(`${this.$baseUrl}/detail.json`, {
           params: {
             id: this.$route.params.id
           }

@@ -17,7 +17,8 @@ import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
-
+// eslint-disable-next-line eqeqeq
+Vue.prototype.$baseUrl = process.env.NODE_ENV === 'production' ? '/static/mock' : '/api'
 Vue.use(VueAwesomeSwiper)
 Vue.use(ElementUI)
 Vue.prototype.$bus = bus

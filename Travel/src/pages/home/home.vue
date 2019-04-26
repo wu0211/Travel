@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getHomeInfo(){
-      axios.get('/static/mock/index.json')
+      axios.get(`${this.$baseUrl}/index.json`)
       .then((result) => {
     
       const data =result.data.data;
