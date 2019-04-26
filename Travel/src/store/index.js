@@ -14,7 +14,7 @@ export default new Vuex.Store({
   //   },
   mutations: {
     changeCity (state, city) {
-      state.city = city;
+      state.city = city
     }
   }
 })
