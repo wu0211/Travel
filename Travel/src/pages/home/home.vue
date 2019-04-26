@@ -32,7 +32,8 @@ export default {
       recommendList:[],
       weekendList:[]
     }
-  },mounted() {
+  },
+  mounted() {
     this.getHomeInfo()
   },
   methods: {
