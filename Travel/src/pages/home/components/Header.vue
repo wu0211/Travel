@@ -17,7 +17,9 @@
 <script>
   export default {
     name: 'HomeHeader',
-   
+     mounted() {
+     this.$bus.$emit('bus',"!23")
+   },
   }
 
 </script>

@@ -25,6 +25,15 @@
         }
       }
     },
+    mounted() {
+     
+     
+    },
+    created() {
+      this.$bus.$on('bus',res=>{
+        console.log(res,"中央事件")
+      })
+    },
     computed: {
       pages() {
         const pages = [];

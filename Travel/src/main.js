@@ -7,6 +7,7 @@ import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'babel-polyfill'
 import store from './store/index'
+import bus from '../static/bus'
 import ElementUI from 'element-ui'
 
 import 'styles/reset.css'
@@ -19,7 +20,7 @@ fastClick.attach(document.body)
 
 Vue.use(VueAwesomeSwiper)
 Vue.use(ElementUI)
-
+Vue.prototype.$bus = bus
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
