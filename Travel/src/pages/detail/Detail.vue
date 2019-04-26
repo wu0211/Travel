@@ -40,7 +40,7 @@
         //}).catch((err) => {
 
         //});
-        axios.get('/api/detail.json', {
+        axios.get('/static/mock/detail.json', {
           params: {
             id: this.$route.params.id
           }
@@ -48,7 +48,7 @@
           result = result.data;
           if (result.ret && result.data) {
             const data = result.data;
-            console.log(data)
+
             this.sightName = data.sightName;
             this.bannerImg = data.bannerImg;
             this.gallaryImgs = data.gallaryImgs;
