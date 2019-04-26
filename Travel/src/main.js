@@ -18,7 +18,7 @@ import 'swiper/dist/css/swiper.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 
-Vue.prototype.$baseUrl = process.env.NODE_ENV === 'production' ? '@/static/mock' : '/api'
+Vue.prototype.$baseUrl = process.env.NODE_ENV === 'production' ? '../static/mock' : '/api'
 
 Vue.use(VueAwesomeSwiper)
 Vue.use(ElementUI)
