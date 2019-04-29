@@ -40,7 +40,7 @@ export default {
     getHomeInfo(){
       axios.get(`${this.$baseUrl}/index.json`)
       .then((result) => {
-    
+        console.log(process.env.NODE_ENV)
       const data =result.data.data;
      
       this.swiperList=data.swiperList;
